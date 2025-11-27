@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "146baefac2d0d1e12fe86ee5215317a4bcb1ff9e",
+	"url": "https://github.com/apache/ant/commit/146baefac2d0d1e12fe86ee5215317a4bcb1ff9e",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "114228d3072311da73310182829c4bef8b0614fc",
+	"url": "https://github.com/apache/ant/commit/114228d3072311da73310182829c4bef8b0614fc",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type noLinks : ArrayList<String> to noLinks : String[] in method private scandir(dir File, path TokenizedPath, fast boolean, newFiles String[], directoryNamesFollowed Deque<String>) : void from class org.apache.tools.ant.DirectoryScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1213,
+		"endLine": 1213,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "noLinks : ArrayList<String>"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1234,
+		"endLine": 1234,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1213,
+		"endLine": 1213,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "noLinks : String[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1235,
+		"endLine": 1235,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type al : List<TokenizedPattern> to al : TokenizedPattern[] in method private fillNonPatternSet(map Map<String,TokenizedPath>, patterns String[]) : TokenizedPattern[] from class org.apache.tools.ant.DirectoryScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1791,
+		"endLine": 1791,
+		"startColumn": 38,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "al : List<TokenizedPattern>"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1800,
+		"endLine": 1800,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1792,
+		"endLine": 1792,
+		"startColumn": 34,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "al : TokenizedPattern[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/DirectoryScanner.java",
+		"startLine": 1802,
+		"endLine": 1802,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/ant.git",
+	"sha1": "3275173a3d712306c878fca57ed221fd5051eb83",
+	"url": "https://github.com/apache/ant/commit/3275173a3d712306c878fca57ed221fd5051eb83",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable toCopy : String[] in method protected buildMap(fromDir File, toDir File, names String[], mapper FileNameMapper, map Hashtable<String,String[]>) : void from class org.apache.tools.ant.taskdefs.Copy",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 774,
+		"endLine": 774,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "toCopy : String[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 763,
+		"endLine": 805,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected buildMap(fromDir File, toDir File, names String[], mapper FileNameMapper, map Hashtable<String,String[]>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 774,
+		"endLine": 774,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "toCopy : String[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 763,
+		"endLine": 806,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected buildMap(fromDir File, toDir File, names String[], mapper FileNameMapper, map Hashtable<String,String[]>) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type v : List<String> to v : String[] in method protected buildMap(fromDir File, toDir File, names String[], mapper FileNameMapper, map Hashtable<String,String[]>) : void from class org.apache.tools.ant.taskdefs.Copy",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 776,
+		"endLine": 776,
+		"startColumn": 32,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "v : List<String>"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 782,
+		"endLine": 782,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 776,
+		"endLine": 776,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "v : String[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 783,
+		"endLine": 783,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable toCopy : Resource[] in method protected buildMap(fromResources Resource[], toDir File, mapper FileNameMapper) : Map<Resource,String[]> from class org.apache.tools.ant.taskdefs.Copy",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 819,
+		"endLine": 819,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "toCopy : Resource[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 807,
+		"endLine": 850,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected buildMap(fromResources Resource[], toDir File, mapper FileNameMapper) : Map<Resource,String[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 820,
+		"endLine": 820,
+		"startColumn": 26,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "toCopy : Resource[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 808,
+		"endLine": 852,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected buildMap(fromResources Resource[], toDir File, mapper FileNameMapper) : Map<Resource,String[]>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type v : List<Resource> to v : Resource[] in method protected buildMap(fromResources Resource[], toDir File, mapper FileNameMapper) : Map<Resource,String[]> from class org.apache.tools.ant.taskdefs.Copy",
+	"leftSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 821,
+		"endLine": 821,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "v : List<Resource>"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 822,
+		"endLine": 822,
+		"startColumn": 30,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "v : Resource[]"
+}, {
+		"filePath": "src/main/org/apache/tools/ant/taskdefs/Copy.java",
+		"startLine": 829,
+		"endLine": 829,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

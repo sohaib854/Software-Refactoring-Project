@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "f4b5bc7cd5ea6b44a36ce57d0a1f19f5786839a2",
+	"url": "https://github.com/jfree/jfreechart/commit/f4b5bc7cd5ea6b44a36ce57d0a1f19f5786839a2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "38e929de37f3f171cab7bfc786198c98ed1465cf",
+	"url": "https://github.com/jfree/jfreechart/commit/38e929de37f3f171cab7bfc786198c98ed1465cf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "72e7701103e90ea443f94e63d2e87a2bf2221f5f",
+	"url": "https://github.com/jfree/jfreechart/commit/72e7701103e90ea443f94e63d2e87a2bf2221f5f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "21922c1c975bc303de66097913c0b97c115fcca7",
+	"url": "https://github.com/jfree/jfreechart/commit/21922c1c975bc303de66097913c0b97c115fcca7",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class org.jfree.chart.plot.compass.CompassPlotTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 50,
+		"endLine": 136,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jfree.chart.plot.compass.CompassPlotTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 50,
+		"endLine": 145,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.jfree.chart.plot.compass.CompassPlotTest"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package testEquals() : void from class org.jfree.chart.plot.compass.CompassPlotTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 55,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testEquals() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 55,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package testEquals() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package testSerialization() : void from class org.jfree.chart.plot.compass.CompassPlotTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 107,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSerialization() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 107,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package testSerialization() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package testCloning() : void from class org.jfree.chart.plot.compass.CompassPlotTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 123,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloning() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/plot/compass/CompassPlotTest.java",
+		"startLine": 123,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package testCloning() : void"
+}]
+}
+]
+}]
+}

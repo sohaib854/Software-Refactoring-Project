@@ -1,0 +1,4149 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "e61fcdd3b4d6bfb8f4ade26d2e032f1e02f4e93f",
+	"url": "https://github.com/jfree/jfreechart/commit/e61fcdd3b4d6bfb8f4ade26d2e032f1e02f4e93f",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "82271c2a0805606c98ac3695547468de3499961b",
+	"url": "https://github.com/jfree/jfreechart/commit/82271c2a0805606c98ac3695547468de3499961b",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<?> in method public generateURL(dataset PieDataset<?>, key Comparable<?>, pieIndex int) : String from class org.jfree.chart.urls.PieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<?>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "8a2edb01a37007538f64c8c900d5ca6498115690",
+	"url": "https://github.com/jfree/jfreechart/commit/8a2edb01a37007538f64c8c900d5ca6498115690",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "f6577e28b35289977b77405508b589e9973e38e7",
+	"url": "https://github.com/jfree/jfreechart/commit/f6577e28b35289977b77405508b589e9973e38e7",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private serialVersionUID : long from class org.jfree.chart.swing.ChartPanel",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/swing/ChartPanel.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected serialVersionUID : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/swing/ChartPanel.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 31,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private serialVersionUID : long"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "6d953e6ad86c2c7da5a39e16641aadaa5e43c04a",
+	"url": "https://github.com/jfree/jfreechart/commit/6d953e6ad86c2c7da5a39e16641aadaa5e43c04a",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g1 : CustomPieURLGenerator to g1 : CustomPieURLGenerator<String> in method public testEquals() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 39,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g2 : CustomPieURLGenerator to g2 : CustomPieURLGenerator<String> in method public testEquals() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 39,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g1 : CustomPieURLGenerator to g1 : CustomPieURLGenerator<String> in method public testCloning() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 39,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g2 : CustomPieURLGenerator to g2 : CustomPieURLGenerator<String> in method public testCloning() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 31,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 39,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g1 : CustomPieURLGenerator to g1 : CustomPieURLGenerator<String> in method public testPublicCloneable() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 39,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g1 : CustomPieURLGenerator to g1 : CustomPieURLGenerator<String> in method public testSerialization() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 31,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 39,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g1 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type g2 : CustomPieURLGenerator to g2 : CustomPieURLGenerator<String> in method public testSerialization() : void from class org.jfree.chart.urls.CustomPieURLGeneratorTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 31,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 39,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "g2 : CustomPieURLGenerator<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/chart/urls/CustomPieURLGeneratorTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type urlMaps : List<Map<Comparable<?>,String>> to urlMaps : List<Map<K,String>> in class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 52,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "urlMaps : List<Map<Comparable<?>,String>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 40,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "urlMaps : List<Map<K,String>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type urlMap : Map<Comparable<?>,String> to urlMap : Map<K,String> in method public getURLCount(plotIndex int) : int from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 36,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "urlMap : Map<Comparable<?>,String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 24,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "urlMap : Map<K,String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type generator : CustomPieURLGenerator to generator : CustomPieURLGenerator<K> in method public equals(obj Object) : boolean from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 35,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "generator : CustomPieURLGenerator"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 173,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 178,
+		"endLine": 180,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 185,
+		"endLine": 188,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "generator : CustomPieURLGenerator<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 175,
+		"endLine": 177,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 180,
+		"endLine": 182,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type keySet : Set to keySet : Set<K> in method public equals(obj Object) : boolean from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "keySet : Set"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 183,
+		"endLine": 189,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 24,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "keySet : Set<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 179,
+		"endLine": 183,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type key : String to key : K in method public equals(obj Object) : boolean from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 24,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 185,
+		"endLine": 188,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 22,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 180,
+		"endLine": 182,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to obj : Object in method public equals(obj Object) : boolean from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 171,
+		"endLine": 192,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : Object"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 169,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type urlGen : CustomPieURLGenerator to urlGen : CustomPieURLGenerator<K> in method public clone() : Object from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 31,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "urlGen : CustomPieURLGenerator"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 34,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "urlGen : CustomPieURLGenerator<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable<?> to key : K in method public generateURL(dataset PieDataset<K>, key K, plotIndex int) : String from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 51,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable<?>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 54,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<K> in method public generateURL(dataset PieDataset<K>, key K, plotIndex int) : String from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<K>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type urlMap : Map<Comparable<?>,String> to urlMap : Map<K,String> in method public getURL(key K, plotIndex int) : String from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 40,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "urlMap : Map<Comparable<?>,String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 135,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 28,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "urlMap : Map<K,String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 135,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable<?> to key : K in method public getURL(key K, plotIndex int) : String from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable<?>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type urlMap : Map to urlMap : Map<K,String> in method public addURLs(urlMap Map<K,String>) : void from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "urlMap : Map"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "urlMap : Map<K,String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset<?> to dataset : PieDataset<K> in method public generateURL(dataset PieDataset<K>, key K, pieIndex int) : String from class org.jfree.chart.urls.PieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<K>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable<?> to key : K in method public generateURL(dataset PieDataset<K>, key K, pieIndex int) : String from class org.jfree.chart.urls.PieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 47,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/PieURLGenerator.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 47,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "fc0389b1f4b41752d49584a06d89ed38f97fc0fe",
+	"url": "https://github.com/jfree/jfreechart/commit/fc0389b1f4b41752d49584a06d89ed38f97fc0fe",
+	"refactorings": [{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond CustomPieURLGenerator<K> with CustomPieURLGenerator<> in method public clone() : Object from class org.jfree.chart.urls.CustomPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 43,
+		"endColumn": 73,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "CustomPieURLGenerator<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 190,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clone() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 43,
+		"endColumn": 72,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "CustomPieURLGenerator<>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java",
+		"startLine": 190,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public clone() : Object"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "684066dfaeba6accbe09a771345dfee67d0de2bb",
+	"url": "https://github.com/jfree/jfreechart/commit/684066dfaeba6accbe09a771345dfee67d0de2bb",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type object : Object to number : Number in method public calculateMean(values Collection<? extends Number>, includeNullAndNaN boolean) : double from class org.jfree.data.statistics.Statistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "object : Object"
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 133,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "number : Number"
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 135,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable object : Object to number : Number in method public calculateMean(values Collection<? extends Number>, includeNullAndNaN boolean) : double from class org.jfree.data.statistics.Statistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "object : Object"
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 133,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "number : Number"
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 135,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/data/statistics/Statistics.java",
+		"startLine": 134,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "1b3b546741f87f2b01f83f188e626418d47fc240",
+	"url": "https://github.com/jfree/jfreechart/commit/1b3b546741f87f2b01f83f188e626418d47fc240",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type plot : PiePlot to plot : PiePlot<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "plot : PiePlot"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "plot : PiePlot<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 305,
+		"endLine": 306,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type keys : List to keys : List<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "keys : List"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 262,
+		"endLine": 301,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 22,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "keys : List<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 262,
+		"endLine": 299,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type series : DefaultPieDataset to series : DefaultPieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "series : DefaultPieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 296,
+		"endLine": 298,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "series : DefaultPieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 294,
+		"endLine": 296,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 59,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 59,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type previousDataset : PieDataset to previousDataset : PieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "previousDataset : PieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "previousDataset : PieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type key : Comparable to key : String in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, locale Locale, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 296,
+		"endLine": 298,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 14,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 294,
+		"endLine": 296,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type plot : PiePlot to plot : PiePlot<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "plot : PiePlot"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 428,
+		"endLine": 429,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "plot : PiePlot<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 364,
+		"endLine": 364,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type keys : List to keys : List<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "keys : List"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 383,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 22,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "keys : List<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 381,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type series : DefaultPieDataset to series : DefaultPieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "series : DefaultPieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 417,
+		"endLine": 419,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "series : DefaultPieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 413,
+		"endLine": 415,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 59,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 59,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type previousDataset : PieDataset to previousDataset : PieDataset<String> in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "previousDataset : PieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "previousDataset : PieDataset<String>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type key : Comparable to key : String in method public createPieChart(title String, dataset PieDataset<String>, previousDataset PieDataset<String>, percentDiffForMaxScale int, greenForIncrease boolean, legend boolean, tooltips boolean, urls boolean, subTitle boolean, showDifference boolean) : JFreeChart from class org.jfree.chart.ChartFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 417,
+		"endLine": 419,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 14,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 21,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/ChartFactory.java",
+		"startLine": 413,
+		"endLine": 415,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<K> in method public generateToolTip(dataset PieDataset<K>, key K) : String from class org.jfree.chart.labels.StandardPieToolTipGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 35,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 35,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable to key : K in method public generateToolTip(dataset PieDataset<K>, key K) : String from class org.jfree.chart.labels.StandardPieToolTipGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 55,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 58,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/labels/StandardPieToolTipGenerator.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type that : StandardPieURLGenerator to that : StandardPieURLGenerator<K> in method public equals(obj Object) : boolean from class org.jfree.chart.urls.StandardPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "that : StandardPieURLGenerator"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 154,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 157,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 160,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 36,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "that : StandardPieURLGenerator<K>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 155,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 158,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 161,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable to key : K in method public generateURL(dataset PieDataset<K>, key K, pieIndex int) : String from class org.jfree.chart.urls.StandardPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 51,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 123,
+		"endLine": 124,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 126,
+		"endLine": 127,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 54,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 127,
+		"endLine": 128,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<K> in method public generateURL(dataset PieDataset<K>, key K, pieIndex int) : String from class org.jfree.chart.urls.StandardPieURLGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/urls/StandardPieURLGenerator.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<K>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataset : PieDataset to dataset : PieDataset<K> in method public generateToolTip(dataset PieDataset<K>, key K) : String from class org.jfree.chart.labels.PieToolTipGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/PieToolTipGenerator.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataset : PieDataset"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/PieToolTipGenerator.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 28,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : PieDataset<K>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type key : Comparable to key : K in method public generateToolTip(dataset PieDataset<K>, key K) : String from class org.jfree.chart.labels.PieToolTipGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/PieToolTipGenerator.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : Comparable"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/labels/PieToolTipGenerator.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 51,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : K"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "d793a08a6a891782b5216cd35b9c3fba87c860c6",
+	"url": "https://github.com/jfree/jfreechart/commit/d793a08a6a891782b5216cd35b9c3fba87c860c6",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dataset : TimePeriodValuesCollection to dataset : TimePeriodValuesCollection<String> in method public test1161340() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 36,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 44,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c1 : TimePeriodValuesCollection to c1 : TimePeriodValuesCollection<String> in method public testEquals() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 36,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 44,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c2 : TimePeriodValuesCollection to c2 : TimePeriodValuesCollection<String> in method public testEquals() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 36,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c2 : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 44,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c2 : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c1 : TimePeriodValuesCollection to c1 : TimePeriodValuesCollection<String> in method public testSerialization() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 36,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 44,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c2 : TimePeriodValuesCollection to c2 : TimePeriodValuesCollection<String> in method public testSerialization() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 36,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c2 : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 44,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c2 : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type c1 : TimePeriodValuesCollection to c1 : TimePeriodValuesCollection<String> in method public testGetSeries() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 36,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 44,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c1 : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dataset : TimePeriodValuesCollection to dataset : TimePeriodValuesCollection<String> in method public testGetDomainBoundsWithoutInterval() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 36,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 44,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dataset : TimePeriodValuesCollection to dataset : TimePeriodValuesCollection<String> in method public testGetDomainBoundsWithInterval() : void from class org.jfree.data.time.TimePeriodValuesCollectionTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 36,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 44,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataset : TimePeriodValuesCollection<String>"
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jfree/data/time/TimePeriodValuesCollectionTest.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "6e62b65fe7289566641c4a757e62248cbb44d549",
+	"url": "https://github.com/jfree/jfreechart/commit/6e62b65fe7289566641c4a757e62248cbb44d549",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "9a581995ef8a87bd67f0fd31c1a3ada93dc2f534",
+	"url": "https://github.com/jfree/jfreechart/commit/9a581995ef8a87bd67f0fd31c1a3ada93dc2f534",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable hash : int in method public hashCode() : int from class org.jfree.chart.plot.CategoryPlot",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 4660,
+		"endLine": 4660,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "hash : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 4656,
+		"endLine": 4656,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<Integer,CategoryDataset> to Map<Integer,CategoryDataset<R,C>> in method public getDatasets() : Map<Integer,CategoryDataset<R,C>> from class org.jfree.chart.plot.CategoryPlot",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 1165,
+		"endLine": 1165,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<Integer,CategoryDataset>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 1156,
+		"endLine": 1167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDatasets() : Map<Integer,CategoryDataset>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 1165,
+		"endLine": 1165,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<Integer,CategoryDataset<R,C>>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/plot/CategoryPlot.java",
+		"startLine": 1156,
+		"endLine": 1167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getDatasets() : Map<Integer,CategoryDataset<R,C>>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "e1e37b482b80d8f8aaec9eacffac9925aef683fe",
+	"url": "https://github.com/jfree/jfreechart/commit/e1e37b482b80d8f8aaec9eacffac9925aef683fe",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "b33783ecba470ef0fcd96a446c8c18cdc46a9fc5",
+	"url": "https://github.com/jfree/jfreechart/commit/b33783ecba470ef0fcd96a446c8c18cdc46a9fc5",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "642a768a13e06cc22fab6deb615e967fc4a57dfe",
+	"url": "https://github.com/jfree/jfreechart/commit/642a768a13e06cc22fab6deb615e967fc4a57dfe",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "e6f7a837ad298ff72ac712214bd68059922569c2",
+	"url": "https://github.com/jfree/jfreechart/commit/e6f7a837ad298ff72ac712214bd68059922569c2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "8630b760827ad4058f33793222190ee34b6a9f89",
+	"url": "https://github.com/jfree/jfreechart/commit/8630b760827ad4058f33793222190ee34b6a9f89",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<Integer,XYDataset> to Map<Integer,XYDataset<S>> in method public getDatasets() : Map<Integer,XYDataset<S>> from class org.jfree.chart.plot.XYPlot",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/XYPlot.java",
+		"startLine": 1159,
+		"endLine": 1159,
+		"startColumn": 12,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<Integer,XYDataset>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/plot/XYPlot.java",
+		"startLine": 1150,
+		"endLine": 1161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDatasets() : Map<Integer,XYDataset>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/chart/plot/XYPlot.java",
+		"startLine": 1157,
+		"endLine": 1157,
+		"startColumn": 12,
+		"endColumn": 38,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<Integer,XYDataset<S>>"
+}, {
+		"filePath": "src/main/java/org/jfree/chart/plot/XYPlot.java",
+		"startLine": 1148,
+		"endLine": 1159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getDatasets() : Map<Integer,XYDataset<S>>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "6ea959befb1d1d29f0141682ec3ddf2c89d4e733",
+	"url": "https://github.com/jfree/jfreechart/commit/6ea959befb1d1d29f0141682ec3ddf2c89d4e733",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "b94b540f6992ca6b410717c2c80281a9a44ed82a",
+	"url": "https://github.com/jfree/jfreechart/commit/b94b540f6992ca6b410717c2c80281a9a44ed82a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "24d074c52174710af921b37a58abe1ee585dc475",
+	"url": "https://github.com/jfree/jfreechart/commit/24d074c52174710af921b37a58abe1ee585dc475",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "54c810f4a633956ad6fe2a1d65699f6130e9654f",
+	"url": "https://github.com/jfree/jfreechart/commit/54c810f4a633956ad6fe2a1d65699f6130e9654f",
+	"refactorings": []
+}]
+}

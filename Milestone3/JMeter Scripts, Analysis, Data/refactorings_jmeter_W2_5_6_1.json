@@ -1,0 +1,3801 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "29abbcf883da94dd065191ef828faa65028689bf",
+	"url": "https://github.com/apache/jmeter/commit/29abbcf883da94dd065191ef828faa65028689bf",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "86f3d406f9036cd487fefe14150404a08ee69123",
+	"url": "https://github.com/apache/jmeter/commit/86f3d406f9036cd487fefe14150404a08ee69123",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "0d4c51221059d71d9dd5f100b1109401cb1dfb20",
+	"url": "https://github.com/apache/jmeter/commit/0d4c51221059d71d9dd5f100b1109401cb1dfb20",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "89c69b47d31d776553fb18b332b1314fbb4f742c",
+	"url": "https://github.com/apache/jmeter/commit/89c69b47d31d776553fb18b332b1314fbb4f742c",
+	"refactorings": [{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @AutoService(BackendListenerClient.class) in class org.apache.jmeter.visualizers.backend.AbstractBackendListenerClient",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/visualizers/backend/AbstractBackendListenerClient.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 42,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@AutoService(BackendListenerClient.class)"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/visualizers/backend/AbstractBackendListenerClient.java",
+		"startLine": 29,
+		"endLine": 128,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.visualizers.backend.AbstractBackendListenerClient"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/visualizers/backend/AbstractBackendListenerClient.java",
+		"startLine": 27,
+		"endLine": 125,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.apache.jmeter.visualizers.backend.AbstractBackendListenerClient"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "b15439e340b6c566fddc41874257d7a200455496",
+	"url": "https://github.com/apache/jmeter/commit/b15439e340b6c566fddc41874257d7a200455496",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type listClasses : List<String> to commandServices : Collection<Command> in method public populateCommandMap() : void from class org.apache.jmeter.gui.action.ActionRouter",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "listClasses : List<String>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 366,
+		"endLine": 369,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 370,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 318,
+		"endLine": 323,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "commandServices : Collection<Command>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 325,
+		"endLine": 329,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 330,
+		"endLine": 335,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable listClasses : List<String> to commandServices : Collection<Command> in method public populateCommandMap() : void from class org.apache.jmeter.gui.action.ActionRouter",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "listClasses : List<String>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 366,
+		"endLine": 369,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 370,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 318,
+		"endLine": 323,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "commandServices : Collection<Command>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 325,
+		"endLine": 329,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/ActionRouter.java",
+		"startLine": 330,
+		"endLine": 335,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @JMeterService in class org.apache.jmeter.gui.action.Command",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/Command.java",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.gui.action.Command"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/Command.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 0,
+		"endColumn": 15,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@JMeterService"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/gui/action/Command.java",
+		"startLine": 26,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.jmeter.gui.action.Command"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "d74c5aa48a77b0a6b04673f30f5799db5fe2ba5b",
+	"url": "https://github.com/apache/jmeter/commit/d74c5aa48a77b0a6b04673f30f5799db5fe2ba5b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "088fedeaed8d31c78c7d508556219c87e4c549c3",
+	"url": "https://github.com/apache/jmeter/commit/088fedeaed8d31c78c7d508556219c87e4c549c3",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "8b379c7afce5a298db887f5afef4cfdab6eb6fda",
+	"url": "https://github.com/apache/jmeter/commit/8b379c7afce5a298db887f5afef4cfdab6eb6fda",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "da93b6e857d9ff2ca2aa4b40678321a81b1d8f36",
+	"url": "https://github.com/apache/jmeter/commit/da93b6e857d9ff2ca2aa4b40678321a81b1d8f36",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "4d9d99a364d0533782e14209a399b60672fa7032",
+	"url": "https://github.com/apache/jmeter/commit/4d9d99a364d0533782e14209a399b60672fa7032",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f33e61efc45dd0fd328393953aa4ea9144aa8162",
+	"url": "https://github.com/apache/jmeter/commit/f33e61efc45dd0fd328393953aa4ea9144aa8162",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type in : BufferedInputStream to in : InputStream in method protected readResponse(conn HttpURLConnection, res SampleResult) : byte[] from class org.apache.jmeter.protocol.http.sampler.HTTPJavaImpl",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 29,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "in : BufferedInputStream"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 21,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "in : InputStream"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPJavaImpl.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "264654d0f48ed70ff6d89351b0137bad6ab63ced",
+	"url": "https://github.com/apache/jmeter/commit/264654d0f48ed70ff6d89351b0137bad6ab63ced",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "92df9fe68946cf6f2fe3fc6a3c306055f7a6e5d4",
+	"url": "https://github.com/apache/jmeter/commit/92df9fe68946cf6f2fe3fc6a3c306055f7a6e5d4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "15284a832b28bfe79c5348f4b81415c2b2563e4a",
+	"url": "https://github.com/apache/jmeter/commit/15284a832b28bfe79c5348f4b81415c2b2563e4a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type iter : Iterator<JMeterProperty> to iter : Iterator<? extends JMeterProperty> in class org.apache.jmeter.testelement.property.PropertyIteratorImpl",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 44,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "iter : Iterator<JMeterProperty>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 54,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "iter : Iterator<? extends JMeterProperty>"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public PropertyIteratorImpl(owner TestElement, properties Iterable<? extends JMeterProperty>) extracted from public PropertyIteratorImpl(value Collection<JMeterProperty>) in class org.apache.jmeter.testelement.property.PropertyIteratorImpl",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 27,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public PropertyIteratorImpl(value Collection<JMeterProperty>)"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PropertyIteratorImpl(owner TestElement, properties Iterable<? extends JMeterProperty>)"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public PropertyIteratorImpl(value Collection<JMeterProperty>)"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(null,value)"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable last : JMeterProperty in method public next() : JMeterProperty from class org.apache.jmeter.testelement.property.PropertyIteratorImpl",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "last : JMeterProperty"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/PropertyIteratorImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "7037a661984aa0207bcbfc79bd913934b8eceb45",
+	"url": "https://github.com/apache/jmeter/commit/7037a661984aa0207bcbfc79bd913934b8eceb45",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "1060db385e5a224cc537a995177282c6d2ff988b",
+	"url": "https://github.com/apache/jmeter/commit/1060db385e5a224cc537a995177282c6d2ff988b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "a2690e8a6d22420869eb89643c116901cc5c5bce",
+	"url": "https://github.com/apache/jmeter/commit/a2690e8a6d22420869eb89643c116901cc5c5bce",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f2f7dc65c5a3be7c848b7f7dc74d709fc2c57639",
+	"url": "https://github.com/apache/jmeter/commit/f2f7dc65c5a3be7c848b7f7dc74d709fc2c57639",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "1a295da0d629c66f9c462f3e98aa72251fc5b769",
+	"url": "https://github.com/apache/jmeter/commit/1a295da0d629c66f9c462f3e98aa72251fc5b769",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "7951ac469f7cd81f493942cc0ab4f485df6edb9d",
+	"url": "https://github.com/apache/jmeter/commit/7951ac469f7cd81f493942cc0ab4f485df6edb9d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "a4eb604c263b7b49eed1b50134ad72dbefb42f4b",
+	"url": "https://github.com/apache/jmeter/commit/a4eb604c263b7b49eed1b50134ad72dbefb42f4b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "6f5936b5eb1412da27d369de3c2892e20b04e5b4",
+	"url": "https://github.com/apache/jmeter/commit/6f5936b5eb1412da27d369de3c2892e20b04e5b4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "9b6cddfa1cb71e08805e9109f7d6b1756cf03ab9",
+	"url": "https://github.com/apache/jmeter/commit/9b6cddfa1cb71e08805e9109f7d6b1756cf03ab9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "5f6bb607be1bb9c139b36134a441e807a4104197",
+	"url": "https://github.com/apache/jmeter/commit/5f6bb607be1bb9c139b36134a441e807a4104197",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "209af907f1dc477c364c9f6b7edf20f6c9694db1",
+	"url": "https://github.com/apache/jmeter/commit/209af907f1dc477c364c9f6b7edf20f6c9694db1",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ae8c1ec2ba18c74f7900a474989877d26d369915",
+	"url": "https://github.com/apache/jmeter/commit/ae8c1ec2ba18c74f7900a474989877d26d369915",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "6d6479ba7a387a4bd9de4759f595dbcf9d644101",
+	"url": "https://github.com/apache/jmeter/commit/6d6479ba7a387a4bd9de4759f595dbcf9d644101",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "31e42426238ec74e4f355baa927e55df780c3057",
+	"url": "https://github.com/apache/jmeter/commit/31e42426238ec74e4f355baa927e55df780c3057",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"deprecation\") in method public getThreadName() : String from class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 762,
+		"endLine": 768,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getThreadName() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 766,
+		"endLine": 766,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 762,
+		"endLine": 769,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getThreadName() : String"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"deprecation\") in method public setThreadName(inthreadName String) : void from class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 770,
+		"endLine": 782,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setThreadName(inthreadName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 776,
+		"endLine": 776,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 771,
+		"endLine": 784,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public setThreadName(inthreadName String) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private setSamplerThreadName(sampler Sampler) : void extracted from private doSampling(threadContext JMeterContext, sampler Sampler) : SampleResult in class org.apache.jmeter.threads.JMeterThread",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 622,
+		"endLine": 660,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private doSampling(threadContext JMeterContext, sampler Sampler) : SampleResult"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 637,
+		"endLine": 637,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 662,
+		"endLine": 665,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private setSamplerThreadName(sampler Sampler) : void"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 664,
+		"endLine": 664,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 622,
+		"endLine": 660,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private doSampling(threadContext JMeterContext, sampler Sampler) : SampleResult"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/JMeterThread.java",
+		"startLine": 637,
+		"endLine": 637,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setSamplerThreadName(sampler)"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "4bf88b55ecef7369ebdb313410c02321db9d8a1b",
+	"url": "https://github.com/apache/jmeter/commit/4bf88b55ecef7369ebdb313410c02321db9d8a1b",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ff5cb45708b46e880759a933ae697ea7e77f2a68",
+	"url": "https://github.com/apache/jmeter/commit/ff5cb45708b46e880759a933ae697ea7e77f2a68",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @API(status = API.Status.EXPERIMENTAL, since = \"5.5.1\") to @API(status = API.Status.EXPERIMENTAL, since = \"5.6\") in method public awaitTermination(duration Duration) : void from class org.apache.jmeter.engine.StandardJMeterEngine",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/StandardJMeterEngine.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 5,
+		"endColumn": 60,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@API(status = API.Status.EXPERIMENTAL, since = \"5.5.1\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/StandardJMeterEngine.java",
+		"startLine": 217,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public awaitTermination(duration Duration) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/StandardJMeterEngine.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@API(status = API.Status.EXPERIMENTAL, since = \"5.6\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/StandardJMeterEngine.java",
+		"startLine": 217,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public awaitTermination(duration Duration) : void"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "cc7d677da9395ff0ca6d407e739e99826cf274f4",
+	"url": "https://github.com/apache/jmeter/commit/cc7d677da9395ff0ca6d407e739e99826cf274f4",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private getRawProperty(key String) : JMeterProperty renamed to public getPropertyOrNull(key String) : JMeterProperty in class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 283,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getRawProperty(key String) : JMeterProperty"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 284,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getPropertyOrNull(key String) : JMeterProperty"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public getPropertyOrNull(key String) : JMeterProperty from class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 283,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getRawProperty(key String) : JMeterProperty"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 284,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getPropertyOrNull(key String) : JMeterProperty"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @API(status = API.Status.EXPERIMENTAL, since = \"5.6\") in method public getPropertyOrNull(key String) : JMeterProperty from class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 283,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getRawProperty(key String) : JMeterProperty"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@API(status = API.Status.EXPERIMENTAL, since = \"5.6\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 284,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getPropertyOrNull(key String) : JMeterProperty"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getPropertyOrNull(key String) : JMeterProperty from class org.apache.jmeter.testelement.AbstractTestElement",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 283,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getRawProperty(key String) : JMeterProperty"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/AbstractTestElement.java",
+		"startLine": 284,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getPropertyOrNull(key String) : JMeterProperty"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "9e1582536d4b77c132ce33ce14d302c2f65e0b8c",
+	"url": "https://github.com/apache/jmeter/commit/9e1582536d4b77c132ce33ce14d302c2f65e0b8c",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressWarnings(\"deprecation\") in class org.apache.jmeter.engine.util.AbstractTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/AbstractTransformer.java",
+		"startLine": 22,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.engine.util.AbstractTransformer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/AbstractTransformer.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/AbstractTransformer.java",
+		"startLine": 22,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.jmeter.engine.util.AbstractTransformer"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type transform : ValueTransformer to transform : PropertyTransformer in method private replaceValues(iter PropertyIterator, transform PropertyTransformer) : Collection<JMeterProperty> from class org.apache.jmeter.engine.util.ValueReplacer",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 84,
+		"endColumn": 110,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "transform : ValueTransformer"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 84,
+		"endColumn": 113,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "transform : PropertyTransformer"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type InvalidVariableException in method private replaceValues(iter PropertyIterator, transform ValueTransformer) : Collection<JMeterProperty> from class org.apache.jmeter.engine.util.ValueReplacer",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 119,
+		"endColumn": 143,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "InvalidVariableException"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 147,
+		"endLine": 189,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private replaceValues(iter PropertyIterator, transform ValueTransformer) : Collection<JMeterProperty>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueReplacer.java",
+		"startLine": 147,
+		"endLine": 188,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "private replaceValues(iter PropertyIterator, transform PropertyTransformer) : Collection<JMeterProperty>"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Deprecated in class org.apache.jmeter.engine.util.ValueTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 25,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.engine.util.ValueTransformer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 26,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.jmeter.engine.util.ValueTransformer"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @API(status = API.Status.DEPRECATED, since = \"5.6\") in class org.apache.jmeter.engine.util.ValueTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 25,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.engine.util.ValueTransformer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 52,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@API(status = API.Status.DEPRECATED, since = \"5.6\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/engine/util/ValueTransformer.java",
+		"startLine": 26,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.jmeter.engine.util.ValueTransformer"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "0ab4bb00723232ce99b97ecc87134317df6b9907",
+	"url": "https://github.com/apache/jmeter/commit/0ab4bb00723232ce99b97ecc87134317df6b9907",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f3ed1db13946a70d5d007a5459c06717b86ff933",
+	"url": "https://github.com/apache/jmeter/commit/f3ed1db13946a70d5d007a5459c06717b86ff933",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type resetInterpreter : JCheckBox to resetInterpreter : JBooleanPropertyEditor in class org.apache.jmeter.protocol.java.control.gui.BeanShellSamplerGui",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "resetInterpreter : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 42,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "resetInterpreter : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private resetInterpreter : JBooleanPropertyEditor from class org.apache.jmeter.protocol.java.control.gui.BeanShellSamplerGui",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private resetInterpreter : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/control/gui/BeanShellSamplerGui.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 42,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private resetInterpreter : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public FILENAME : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 32,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public FILENAME : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 32,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public FILENAME : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public SCRIPT : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 32,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SCRIPT : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 32,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public SCRIPT : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public PARAMETERS : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 32,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PARAMETERS : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 32,
+		"endColumn": 102,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public PARAMETERS : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public INIT_FILE : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 32,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public INIT_FILE : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 32,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public INIT_FILE : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public RESET_INTERPRETER : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 32,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RESET_INTERPRETER : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 32,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public RESET_INTERPRETER : String"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ac1bcf4bf0d7007fef90b8142d3ae6a97d8d132f",
+	"url": "https://github.com/apache/jmeter/commit/ac1bcf4bf0d7007fef90b8142d3ae6a97d8d132f",
+	"refactorings": [{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public NUM_THREADS : String from class org.apache.jmeter.threads.AbstractThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public NUM_THREADS : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 80,
+		"endLine": 81,
+		"startColumn": 32,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public NUM_THREADS : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public IS_SAME_USER_ON_NEXT_ITERATION : String from class org.apache.jmeter.threads.AbstractThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 32,
+		"endColumn": 106,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IS_SAME_USER_ON_NEXT_ITERATION : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 88,
+		"endLine": 89,
+		"startColumn": 32,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public IS_SAME_USER_ON_NEXT_ITERATION : String"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @Deprecated in attribute public DELAYED_START : String from class org.apache.jmeter.threads.ThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 32,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DELAYED_START : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 32,
+		"endColumn": 102,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public DELAYED_START : String"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type delayedStart : JCheckBox to delayedStart : JBooleanPropertyEditor in class org.apache.jmeter.threads.gui.ThreadGroupGui",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/gui/ThreadGroupGui.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "delayedStart : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/gui/ThreadGroupGui.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "delayedStart : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type sameUserBox : JCheckBox to sameUserBox : JBooleanPropertyEditor in class org.apache.jmeter.threads.gui.ThreadGroupGui",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/gui/ThreadGroupGui.java",
+		"startLine": 69,
+		"endLine": 70,
+		"startColumn": 29,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "sameUserBox : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/gui/ThreadGroupGui.java",
+		"startLine": 72,
+		"endLine": 75,
+		"startColumn": 42,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "sameUserBox : JBooleanPropertyEditor"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "96b5d5c4b67bb46bb4a374b4a089aef48f08f2db",
+	"url": "https://github.com/apache/jmeter/commit/96b5d5c4b67bb46bb4a374b4a089aef48f08f2db",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type functionalMode : JCheckBox to functionalMode : JBooleanPropertyEditor in class org.apache.jmeter.control.gui.TestPlanGui",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "functionalMode : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "functionalMode : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type serializedMode : JCheckBox to serializedMode : JBooleanPropertyEditor in class org.apache.jmeter.control.gui.TestPlanGui",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "serializedMode : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 42,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "serializedMode : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type tearDownOnShutdown : JCheckBox to tearDownOnShutdown : JBooleanPropertyEditor in class org.apache.jmeter.control.gui.TestPlanGui",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 29,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "tearDownOnShutdown : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/gui/TestPlanGui.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 42,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "tearDownOnShutdown : JBooleanPropertyEditor"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "5bb56691f93bb7c6b6bee03a2f9a66a562199f51",
+	"url": "https://github.com/apache/jmeter/commit/5bb56691f93bb7c6b6bee03a2f9a66a562199f51",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type useKeepAlive : JCheckBox to useKeepAlive : JBooleanPropertyEditor in class org.apache.jmeter.protocol.http.config.gui.UrlConfigGui",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "useKeepAlive : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "useKeepAlive : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type useMultipart : JCheckBox to useMultipart : JBooleanPropertyEditor in class org.apache.jmeter.protocol.http.config.gui.UrlConfigGui",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "useMultipart : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "useMultipart : JBooleanPropertyEditor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type useBrowserCompatibleMultipartMode : JCheckBox to useBrowserCompatibleMultipartMode : JBooleanPropertyEditor in class org.apache.jmeter.protocol.http.config.gui.UrlConfigGui",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 23,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "useBrowserCompatibleMultipartMode : JCheckBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/config/gui/UrlConfigGui.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 36,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "useBrowserCompatibleMultipartMode : JBooleanPropertyEditor"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "4e5b9df4579489f13d4c4ca3da4ff4ca6bc06c03",
+	"url": "https://github.com/apache/jmeter/commit/4e5b9df4579489f13d4c4ca3da4ff4ca6bc06c03",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "8fe60243b3c879087f8b20dec361eb6aa1be005a",
+	"url": "https://github.com/apache/jmeter/commit/8fe60243b3c879087f8b20dec361eb6aa1be005a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f4d312c26f0b859f8a68007c4c5e649d259998aa",
+	"url": "https://github.com/apache/jmeter/commit/f4d312c26f0b859f8a68007c4c5e649d259998aa",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "cabc3fbe15a71300c9b11fab19d13ff0c4d7373e",
+	"url": "https://github.com/apache/jmeter/commit/cabc3fbe15a71300c9b11fab19d13ff0c4d7373e",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder src/core/src/test to src/core/src/testFixtures",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder src/core/src/test to src/jorphan/src/testFixtures",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "9793459774fcdc4e0d69c05349a6e9a46edc6de8",
+	"url": "https://github.com/apache/jmeter/commit/9793459774fcdc4e0d69c05349a6e9a46edc6de8",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "88423edfb1a354a6170ca608d3fb074bb5b7f2ff",
+	"url": "https://github.com/apache/jmeter/commit/88423edfb1a354a6170ca608d3fb074bb5b7f2ff",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ff8d401b2a2dbec44354676dc0c7345879d7de12",
+	"url": "https://github.com/apache/jmeter/commit/ff8d401b2a2dbec44354676dc0c7345879d7de12",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ef61d4eb0e7c9c08b8fa5ad73386a4ac17be804a",
+	"url": "https://github.com/apache/jmeter/commit/ef61d4eb0e7c9c08b8fa5ad73386a4ac17be804a",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type HashTree to ListedHashTree in method public createNewTree() : ListedHashTree from class org.apache.jorphan.collections.ListedHashTree",
+	"leftSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 139,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createNewTree() : HashTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ListedHashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 144,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createNewTree() : ListedHashTree"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HashTree to ListedHashTree in method public createNewTree(key Object) : ListedHashTree from class org.apache.jorphan.collections.ListedHashTree",
+	"leftSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 145,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createNewTree(key Object) : HashTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ListedHashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 150,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createNewTree(key Object) : ListedHashTree"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HashTree to ListedHashTree in method public createNewTree(values Collection<?>) : ListedHashTree from class org.apache.jorphan.collections.ListedHashTree",
+	"leftSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 151,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createNewTree(values Collection<?>) : HashTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ListedHashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 156,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createNewTree(values Collection<?>) : ListedHashTree"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type newTree : HashTree to newTree : ListedHashTree in method public add(key Object) : ListedHashTree from class org.apache.jorphan.collections.ListedHashTree",
+	"leftSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 22,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newTree : HashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newTree : ListedHashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HashTree to ListedHashTree in method public add(key Object) : ListedHashTree from class org.apache.jorphan.collections.ListedHashTree",
+	"leftSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 157,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public add(key Object) : HashTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ListedHashTree"
+}, {
+		"filePath": "src/jorphan/src/main/java/org/apache/jorphan/collections/ListedHashTree.java",
+		"startLine": 162,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public add(key Object) : ListedHashTree"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "34e3848a1b77bbf92898cd43baabfa5b62965044",
+	"url": "https://github.com/apache/jmeter/commit/34e3848a1b77bbf92898cd43baabfa5b62965044",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "14986056c8b2441ebe4c2edafa996206073cb511",
+	"url": "https://github.com/apache/jmeter/commit/14986056c8b2441ebe4c2edafa996206073cb511",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "c0e942fbe4e3734186c7457857353a1ab4982e58",
+	"url": "https://github.com/apache/jmeter/commit/c0e942fbe4e3734186c7457857353a1ab4982e58",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "7fa39e87ad01475b8865c1882c28d7f062e43c52",
+	"url": "https://github.com/apache/jmeter/commit/7fa39e87ad01475b8865c1882c28d7f062e43c52",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "1398670f2e68c5f1608f6b298c3805b73d34d543",
+	"url": "https://github.com/apache/jmeter/commit/1398670f2e68c5f1608f6b298c3805b73d34d543",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "7a7e946ea8236a2718235ecb2da50876bb99b653",
+	"url": "https://github.com/apache/jmeter/commit/7a7e946ea8236a2718235ecb2da50876bb99b653",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "61cb8ff0514728d46f65d87a56e81e33333d56bb",
+	"url": "https://github.com/apache/jmeter/commit/61cb8ff0514728d46f65d87a56e81e33333d56bb",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "95c41874e5d224e0f025f3c58c2a852e1a92b8ed",
+	"url": "https://github.com/apache/jmeter/commit/95c41874e5d224e0f025f3c58c2a852e1a92b8ed",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "bb9dd3f0a66a04368941c4d9cf7acb3456a424e9",
+	"url": "https://github.com/apache/jmeter/commit/bb9dd3f0a66a04368941c4d9cf7acb3456a424e9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "76b7f3500b347f1cdc1c0fac0f7eb5fe4fe9ba04",
+	"url": "https://github.com/apache/jmeter/commit/76b7f3500b347f1cdc1c0fac0f7eb5fe4fe9ba04",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method private setContinueForeverPrivate(forever boolean) : void inlined to public LoopController() in class org.apache.jmeter.control.LoopController",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private setContinueForeverPrivate(forever boolean) : void"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public LoopController()"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "setContinueForeverPrivate(true)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public LoopController()"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private setContinueForeverPrivate(forever boolean) : void inlined to public setContinueForever(forever boolean) : void in class org.apache.jmeter.control.LoopController",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private setContinueForeverPrivate(forever boolean) : void"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 102,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public setContinueForever(forever boolean) : void"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "setContinueForeverPrivate(forever)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 95,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public setContinueForever(forever boolean) : void"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/control/LoopController.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "5b36de1b0a4f1423815323878bb5455020b383e9",
+	"url": "https://github.com/apache/jmeter/commit/5b36de1b0a4f1423815323878bb5455020b383e9",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "d57e4e535ae96ae88819c0b5b17cab996c578938",
+	"url": "https://github.com/apache/jmeter/commit/d57e4e535ae96ae88819c0b5b17cab996c578938",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "86083488c134945170e27f5157dabab1e2fa5dcb",
+	"url": "https://github.com/apache/jmeter/commit/86083488c134945170e27f5157dabab1e2fa5dcb",
+	"refactorings": [{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"DataFlowIssue\") in attribute public CONCURRENT_POOL_SIZE : int from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONCURRENT_POOL_SIZE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"DataFlowIssue\")"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 29,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public CONCURRENT_POOL_SIZE : int"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"DataFlowIssue\") in attribute public POST_BODY_RAW_DEFAULT : boolean from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 33,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public POST_BODY_RAW_DEFAULT : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"DataFlowIssue\")"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 33,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "public POST_BODY_RAW_DEFAULT : boolean"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private SCHEMA : HTTPSamplerBaseSchema in class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 51,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 48,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private SCHEMA : HTTPSamplerBaseSchema"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 51,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter truth : boolean to value : boolean in method public setMD5(value boolean) : void from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "truth : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : boolean"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type key : String to key : PropertyDescriptor<HTTPSamplerBaseSchema,? extends Serializable> in method public replace(regex String, replaceBy String, caseSensitive boolean) : int from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 2207,
+		"endLine": 2207,
+		"startColumn": 14,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 2208,
+		"endLine": 2208,
+		"startColumn": 120,
+		"endColumn": 139,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 2208,
+		"endLine": 2208,
+		"startColumn": 14,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "key : PropertyDescriptor<HTTPSamplerBaseSchema,? extends Serializable>"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 2209,
+		"endLine": 2209,
+		"startColumn": 110,
+		"endColumn": 121,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute URL_PATH : String to url : String in method public stripFile(url String, el TestElement) : String from class org.apache.jmeter.protocol.http.util.accesslog.TCLogParser",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "URL_PATH : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "url : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 428,
+		"endLine": 428,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute url : String to URL_PATH : String in method public stripFile(url String, el TestElement) : String from class org.apache.jmeter.protocol.http.util.accesslog.TCLogParser",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "url : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "URL_PATH : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/accesslog/TCLogParser.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "be9b3e5972b7dba221fd9a4600d257adb6963437",
+	"url": "https://github.com/apache/jmeter/commit/be9b3e5972b7dba221fd9a4600d257adb6963437",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "50523586440ba36f7b19b54f085100d4b420c422",
+	"url": "https://github.com/apache/jmeter/commit/50523586440ba36f7b19b54f085100d4b420c422",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "2c26623a589429679f6342015758401620bdc72b",
+	"url": "https://github.com/apache/jmeter/commit/2c26623a589429679f6342015758401620bdc72b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useBody() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 656,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useBody() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 657,
+		"endLine": 657,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 658,
+		"endLine": 661,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useBody() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 659,
+		"endLine": 659,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useUnescapedBody() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 661,
+		"endLine": 664,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useUnescapedBody() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 662,
+		"endLine": 662,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 663,
+		"endLine": 666,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useUnescapedBody() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 664,
+		"endLine": 664,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useBodyAsDocument() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 666,
+		"endLine": 669,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useBodyAsDocument() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 667,
+		"endLine": 667,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 668,
+		"endLine": 671,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useBodyAsDocument() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 669,
+		"endLine": 669,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useUrl() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 671,
+		"endLine": 674,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useUrl() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 672,
+		"endLine": 672,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 673,
+		"endLine": 676,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useUrl() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 674,
+		"endLine": 674,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useCode() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 676,
+		"endLine": 679,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useCode() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 677,
+		"endLine": 677,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 678,
+		"endLine": 681,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useCode() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getMatchTarget() : String extracted from public useMessage() : boolean in class org.apache.jmeter.extractor.RegexExtractor",
+	"leftSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 681,
+		"endLine": 684,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public useMessage() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 645,
+		"endLine": 647,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMatchTarget() : String"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 683,
+		"endLine": 686,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public useMessage() : boolean"
+}, {
+		"filePath": "src/components/src/main/java/org/apache/jmeter/extractor/RegexExtractor.java",
+		"startLine": 684,
+		"endLine": 684,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMatchTarget()"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "10556346ea6f893b91b1bd09426c84423d6345f2",
+	"url": "https://github.com/apache/jmeter/commit/10556346ea6f893b91b1bd09426c84423d6345f2",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "9c56e2c9444a17c5c62cb15db610a26674d88ebe",
+	"url": "https://github.com/apache/jmeter/commit/9c56e2c9444a17c5c62cb15db610a26674d88ebe",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f2332f72ccfc39e5a51193ad386669bca6997a1a",
+	"url": "https://github.com/apache/jmeter/commit/f2332f72ccfc39e5a51193ad386669bca6997a1a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "c2df644093aef11549a1b7d89729990d3cb04a6a",
+	"url": "https://github.com/apache/jmeter/commit/c2df644093aef11549a1b7d89729990d3cb04a6a",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "bad9cb12856fe6b47da7c90248cb7edeba0933de",
+	"url": "https://github.com/apache/jmeter/commit/bad9cb12856fe6b47da7c90248cb7edeba0933de",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "31d598f07ebdb2938da358044d75f56f1443ba88",
+	"url": "https://github.com/apache/jmeter/commit/31d598f07ebdb2938da358044d75f56f1443ba88",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "be45aae7260c74febf6bdb8251b568325292880b",
+	"url": "https://github.com/apache/jmeter/commit/be45aae7260c74febf6bdb8251b568325292880b",
+	"refactorings": [{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private CONTENTS_OMITTED : byte[] in class org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.ViewableFileBody",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPHC4Impl.java",
+		"startLine": 1516,
+		"endLine": 1516,
+		"startColumn": 17,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPHC4Impl.java",
+		"startLine": 1506,
+		"endLine": 1507,
+		"startColumn": 37,
+		"endColumn": 89,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private CONTENTS_OMITTED : byte[]"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPHC4Impl.java",
+		"startLine": 1518,
+		"endLine": 1518,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "c0897715dc5d1ed7d02049062c3db8837a29cdb6",
+	"url": "https://github.com/apache/jmeter/commit/c0897715dc5d1ed7d02049062c3db8837a29cdb6",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Isolated in class org.apache.jmeter.junit.JMeterTestCase",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestCase.java",
+		"startLine": 39,
+		"endLine": 156,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.jmeter.junit.JMeterTestCase"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestCase.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 10,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Isolated"
+}, {
+		"filePath": "src/core/src/testFixtures/java/org/apache/jmeter/junit/JMeterTestCase.java",
+		"startLine": 42,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.jmeter.junit.JMeterTestCase"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "43797046fafcd5f79d9215fc84e3521ff7494649",
+	"url": "https://github.com/apache/jmeter/commit/43797046fafcd5f79d9215fc84e3521ff7494649",
+	"refactorings": [{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public NUM_THREADS : String from class org.apache.jmeter.threads.AbstractThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 80,
+		"endLine": 81,
+		"startColumn": 32,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public NUM_THREADS : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public NUM_THREADS : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public IS_SAME_USER_ON_NEXT_ITERATION : String from class org.apache.jmeter.threads.AbstractThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 88,
+		"endLine": 89,
+		"startColumn": 32,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IS_SAME_USER_ON_NEXT_ITERATION : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/AbstractThreadGroup.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 32,
+		"endColumn": 106,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public IS_SAME_USER_ON_NEXT_ITERATION : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public DELAYED_START : String from class org.apache.jmeter.threads.ThreadGroup",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 32,
+		"endColumn": 102,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DELAYED_START : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/threads/ThreadGroup.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 32,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public DELAYED_START : String"
+}]
+},
+{
+	"type": "Inline Attribute",
+	"description": "Inline Attribute private SCHEMA : HTTPSamplerBaseSchema in class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 48,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "inlined attribute declaration",
+		"codeElement": "private SCHEMA : HTTPSamplerBaseSchema"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 51,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the name of the inlined attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 51,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the initializer of the inlined attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @SuppressWarnings(\"DataFlowIssue\") in attribute public CONCURRENT_POOL_SIZE : int from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"DataFlowIssue\")"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 29,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CONCURRENT_POOL_SIZE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public CONCURRENT_POOL_SIZE : int"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @SuppressWarnings(\"DataFlowIssue\") in attribute public POST_BODY_RAW_DEFAULT : boolean from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"DataFlowIssue\")"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 33,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public POST_BODY_RAW_DEFAULT : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 33,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public POST_BODY_RAW_DEFAULT : boolean"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public FILENAME : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 32,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public FILENAME : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 32,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public FILENAME : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public SCRIPT : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 32,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SCRIPT : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 32,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public SCRIPT : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public PARAMETERS : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 32,
+		"endColumn": 102,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PARAMETERS : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 32,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public PARAMETERS : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public INIT_FILE : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 32,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public INIT_FILE : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public INIT_FILE : String"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Deprecated in attribute public RESET_INTERPRETER : String from class org.apache.jmeter.protocol.java.sampler.BeanShellSampler",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 32,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RESET_INTERPRETER : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/java/src/main/java/org/apache/jmeter/protocol/java/sampler/BeanShellSampler.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 32,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "public RESET_INTERPRETER : String"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "7ebbd98c6f24bcb6df7d807f030b215046d10416",
+	"url": "https://github.com/apache/jmeter/commit/7ebbd98c6f24bcb6df7d807f030b215046d10416",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "c46e37a4f0ef8a0aa87c2ea4fe2cab9e0423c49d",
+	"url": "https://github.com/apache/jmeter/commit/c46e37a4f0ef8a0aa87c2ea4fe2cab9e0423c49d",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "ab65d235daf7935aa935db4f14742e89e46c0684",
+	"url": "https://github.com/apache/jmeter/commit/ab65d235daf7935aa935db4f14742e89e46c0684",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "13793b74d96576731062e83b3c365b2adbe6a8df",
+	"url": "https://github.com/apache/jmeter/commit/13793b74d96576731062e83b3c365b2adbe6a8df",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Nullable in method private getHTTPFileArgs() : HTTPFileArgs from class org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 1842,
+		"endLine": 1844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHTTPFileArgs() : HTTPFileArgs"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 1837,
+		"endLine": 1837,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/sampler/HTTPSamplerBase.java",
+		"startLine": 1837,
+		"endLine": 1839,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private getHTTPFileArgs() : HTTPFileArgs"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter name : String to descriptor : PropertyDescriptor<?,?> in method private setProperty(descriptor PropertyDescriptor<?,?>, prop JMeterProperty) : void from class org.apache.jmeter.protocol.http.util.HTTPFileArg",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "descriptor : PropertyDescriptor<?,?>"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type name : String to descriptor : PropertyDescriptor<?,?> in method private setProperty(descriptor PropertyDescriptor<?,?>, prop JMeterProperty) : void from class org.apache.jmeter.protocol.http.util.HTTPFileArg",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "descriptor : PropertyDescriptor<?,?>"
+}, {
+		"filePath": "src/protocol/http/src/main/java/org/apache/jmeter/protocol/http/util/HTTPFileArg.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "049697b00b2b37e212cb8beb274bc78808964529",
+	"url": "https://github.com/apache/jmeter/commit/049697b00b2b37e212cb8beb274bc78808964529",
+	"refactorings": [{
+	"type": "Remove Variable Annotation",
+	"description": "Remove Variable Annotation @SuppressWarnings(\"unchecked\") in variable newColl : Collection<JMeterProperty> in method protected normalizeList(coll Collection<?>) : Collection<JMeterProperty> from class org.apache.jmeter.testelement.property.AbstractProperty",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/AbstractProperty.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/AbstractProperty.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 40,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newColl : Collection<JMeterProperty>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/AbstractProperty.java",
+		"startLine": 291,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected normalizeList(coll Collection<?>) : Collection<JMeterProperty>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/AbstractProperty.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 40,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "newColl : Collection<JMeterProperty>"
+}, {
+		"filePath": "src/core/src/main/java/org/apache/jmeter/testelement/property/AbstractProperty.java",
+		"startLine": 295,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "protected normalizeList(coll Collection<?>) : Collection<JMeterProperty>"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "234e959c2a617593c7e4a710090d14aae7340348",
+	"url": "https://github.com/apache/jmeter/commit/234e959c2a617593c7e4a710090d14aae7340348",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "f7e9673b899bb3c63806e435bb72319a3dbeebc4",
+	"url": "https://github.com/apache/jmeter/commit/f7e9673b899bb3c63806e435bb72319a3dbeebc4",
+	"refactorings": []
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "4e219c063556c3d60d8008a00dfaf5194be49815",
+	"url": "https://github.com/apache/jmeter/commit/4e219c063556c3d60d8008a00dfaf5194be49815",
+	"refactorings": [{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond ArrayList<JMeterProperty> with ArrayList<> in method public testNormalizeListWithEmptyArrayList() : void from class org.apache.jmeter.testelement.property.AbstractPropertyTest",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 54,
+		"endColumn": 85,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "ArrayList<JMeterProperty>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 75,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testNormalizeListWithEmptyArrayList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 54,
+		"endColumn": 71,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "ArrayList<>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 75,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testNormalizeListWithEmptyArrayList() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond ArrayList<JMeterProperty> with ArrayList<> in method public testNormalizeListWithFilledArrayList() : void from class org.apache.jmeter.testelement.property.AbstractPropertyTest",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 49,
+		"endColumn": 80,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "ArrayList<JMeterProperty>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testNormalizeListWithFilledArrayList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "ArrayList<>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/AbstractPropertyTest.java",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testNormalizeListWithFilledArrayList() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond MapProperty with MapProperty in method public testGetPropertyTypeOfEmptyMap() : void from class org.apache.jmeter.testelement.property.MapPropertyTest",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/MapPropertyTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 29,
+		"endColumn": 82,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "MapProperty"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/MapPropertyTest.java",
+		"startLine": 36,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testGetPropertyTypeOfEmptyMap() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/MapPropertyTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 29,
+		"endColumn": 68,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "MapProperty"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/testelement/property/MapPropertyTest.java",
+		"startLine": 36,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testGetPropertyTypeOfEmptyMap() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond ArrayList<String> with ArrayList<> in method public testputValuesForXPathInListUsingSaxon() : void from class org.apache.jmeter.util.XPathUtilTest",
+	"leftSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/util/XPathUtilTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 42,
+		"endColumn": 65,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "ArrayList<String>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/util/XPathUtilTest.java",
+		"startLine": 80,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testputValuesForXPathInListUsingSaxon() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/core/src/test/java/org/apache/jmeter/util/XPathUtilTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 42,
+		"endColumn": 59,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "ArrayList<>"
+}, {
+		"filePath": "src/core/src/test/java/org/apache/jmeter/util/XPathUtilTest.java",
+		"startLine": 80,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testputValuesForXPathInListUsingSaxon() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond Vector<URLString> with Vector<> in method public testParserList() : void from class org.apache.jmeter.protocol.http.parser.TestHTMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "Vector<URLString>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 367,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testParserList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "Vector<>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 367,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testParserList() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond ArrayList<URLString> with ArrayList<> in method public testSpecificParserList() : void from class org.apache.jmeter.protocol.http.parser.TestHTMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "ArrayList<URLString>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 374,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSpecificParserList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "ArrayList<>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/parser/TestHTMLParser.java",
+		"startLine": 374,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "public testSpecificParserList() : void"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond HashMap<String,String> with HashMap<> in method private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase from class org.apache.jmeter.protocol.http.proxy.TestHttpRequestHdr",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 649,
+		"endLine": 649,
+		"startColumn": 73,
+		"endColumn": 102,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "HashMap<String,String>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 635,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 649,
+		"endLine": 649,
+		"startColumn": 73,
+		"endColumn": 88,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "HashMap<>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 635,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase"
+}]
+},
+{
+	"type": "Replace Generic With Diamond",
+	"description": "Replace Generic With Diamond HashMap<String,String> with HashMap<> in method private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase from class org.apache.jmeter.protocol.http.proxy.TestHttpRequestHdr",
+	"leftSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 73,
+		"endColumn": 102,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "original creation",
+		"codeElement": "HashMap<String,String>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 635,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 73,
+		"endColumn": 88,
+		"codeElementType": "CLASS_INSTANCE_CREATION",
+		"description": "creation with diamond operator",
+		"codeElement": "HashMap<>"
+}, {
+		"filePath": "src/protocol/http/src/test/java/org/apache/jmeter/protocol/http/proxy/TestHttpRequestHdr.java",
+		"startLine": 635,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with diamond operator",
+		"codeElement": "private getSamplerForRequest(url String, request String, contentEncoding String) : HTTPSamplerBase"
+}]
+}
+]
+},
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "e024bf3703b9ca459fa531997d5874c9eaae8e36",
+	"url": "https://github.com/apache/jmeter/commit/e024bf3703b9ca459fa531997d5874c9eaae8e36",
+	"refactorings": []
+}]
+}

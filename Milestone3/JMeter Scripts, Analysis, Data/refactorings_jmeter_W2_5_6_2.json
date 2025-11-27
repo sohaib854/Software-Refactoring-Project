@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/jmeter.git",
+	"sha1": "c94db9741f0547235f9a67b1ece40389add6b742",
+	"url": "https://github.com/apache/jmeter/commit/c94db9741f0547235f9a67b1ece40389add6b742",
+	"refactorings": []
+}]
+}

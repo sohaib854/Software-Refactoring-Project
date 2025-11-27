@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfree/jfreechart.git",
+	"sha1": "f3974d700b6638c6617ba09aeed581e33acbb2f6",
+	"url": "https://github.com/jfree/jfreechart/commit/f3974d700b6638c6617ba09aeed581e33acbb2f6",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private day : Day from class org.jfree.data.time.Minute",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 17,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private day : Day"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 23,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private day : Day"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private hour : byte from class org.jfree.data.time.Minute",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hour : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private hour : byte"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private minute : byte from class org.jfree.data.time.Minute",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private minute : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jfree/data/time/Minute.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private minute : byte"
+}]
+}
+]
+}]
+}
